@@ -34,8 +34,8 @@ function readDetails() {
   email = document.getElementById("email");
   MobileNo = document.getElementById("MobileNo");
   UserName = document.getElementById("UserName");
+  Gender = document.getElementById("Gender");
 }
-Gender = document.getElementById("Gender");
 let addBtn = document.getElementById("add");
 let readBtn = document.getElementById("read");
 let updateBtn = document.getElementById("update");
@@ -49,7 +49,7 @@ function addUser() {
     gender: Gender.value,
     email: email.value,
     mobileNo: MobileNo.value,
-    username: UserName.value,
+    username: UserName.value
   })
     .then(() => {
       alert("Data Inserted!!");
