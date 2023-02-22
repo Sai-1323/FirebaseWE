@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>jyscudg csdiucv ixcgv dfiuvhy </h1>
-    <form>
-        in
-    </form>
+  <body>
+    <h1>Student Registration Details</h1>
+    <div class="registration-table">
+      <form action="">
+        <table style="border: 1px" cellspacing="5px" cellpadding="5px">
+          <tr>
+            <td><b>Name : </b></td>
+            <td><input type="text" id="name"/></td>
+          </tr>
+          <tr>
+            <td><b>Roll No : </b></td>
+            <td><input type="text" id="rollNo"/></td>
+          </tr>
+          <tr>
+            <td><b>email : </b></td>
+            <td><input type="email" id="email"/></td>
+          </tr>
+          <tr>
+            <td><b>Mobile No : </b></td>
+            <td><input type="number" id="MobileNo"/></td>
+          </tr>
+          <tr>
+            <td><b>Gender : </b></td>
+            <td>
+              <input type="radio" id="Gender" value="Male"/>Male <br />
+              <input type="radio" id="Gender" value="Female"/>Female<br />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Enter UserName : </b></td>
+            <td><input type="text" id="UserName"/></td>
+          </tr>
+          <tr><td>
+            <input type="button" value="Add" id="add">
+            <input type="button" value="Update" id="update">
+            <input type="button" value="Remove" id="remove">
+            <input type="button" value="Read" id="read">
+          </td></tr>
+        </table>
+      </form>
+    </div>
     <script src="Scripts.js" type="module"></script>
-</body>
-
+  </body>
 </html>
