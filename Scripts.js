@@ -57,14 +57,15 @@ function addUser() {
     .catch((err) => {
       alert(err);
     });
-}
-function readUsers() {
-  get(child(ref(db), "users"))
+  }
+  function readUsers() {
+    var tab = document.getElementById("details");
+    get(child(ref(db), "users"))
     .then((snapshot) => {
       let arr = Object.values(snapshot.val());
       //d.innerHTML += "<table>"
       arr.forEach((ele) => {
-        d.innerHTML+=ele.uid+" , "+ele.name+" , "+ele.email+" , "+ele.mobileNo+" , "+ele.username+"<br/>";
+        tab.innerHTML+="<tr><td>"+ele.uid+"</td><td>"+ele.name+"</td><td>"+ele.email+"</td><td>"+ele.mobileNo+"</td><td>"+ele.username+"</td></tr>";
         console.log(ele);
       });
       //d.innerHTML += "</table>"
@@ -72,6 +73,7 @@ function readUsers() {
     .catch((err) => {
       alert(err);
     });
-}
-addBtn.addEventListener("click", addUser);
-readBtn.addEventListener("click", readUsers);
+  }
+  addBtn.addEventListener("click", addUser);
+  readBtn.addEventListener("click", readUsers);
+  

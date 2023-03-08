@@ -5,51 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Page</title>
+    <style>
+      body {
+        /* border: solid 1px black; */
+        text-align: center;
+        padding: auto;
+        margin: auto;
+      }
+      /* ul{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border:solid 1px black;
+        list-style: none;
+      }
+      ul li{
+
+      } */
+    </style>
   </head>
 
   <body>
     <h1>Student Registration Details</h1>
+    <br /><br />
     <div class="registration-table">
       <form action="">
-        <table style="border: 1px" cellspacing="5px" cellpadding="5px">
+        <table
+          style="padding: auto; margin: auto"
+          cellspacing="5px"
+          cellpadding="5px"
+        >
           <tr>
             <td><b>Name : </b></td>
-            <td><input type="text" id="name"/></td>
+            <td><input type="text" id="name" /></td>
           </tr>
           <tr>
             <td><b>Roll No : </b></td>
-            <td><input type="text" id="rollNo"/></td>
+            <td><input type="text" id="rollNo" /></td>
           </tr>
           <tr>
             <td><b>email : </b></td>
-            <td><input type="email" id="email"/></td>
+            <td><input type="email" id="email" /></td>
           </tr>
           <tr>
             <td><b>Mobile No : </b></td>
-            <td><input type="number" id="MobileNo"/></td>
+            <td><input type="number" id="MobileNo" /></td>
           </tr>
           <tr>
             <td><b>Gender : </b></td>
             <td>
-              <input type="radio" id="Gender" name="Gender" value="Male"/>Male <br />
-              <input type="radio" id="Gender" name="Gender" value="Female"/>Female<br />
+              <input type="radio" id="Gender" name="Gender" value="Male" />Male
+              <br />
+              <input
+                type="radio"
+                id="Gender"
+                name="Gender"
+                value="Female"
+              />Female<br />
             </td>
           </tr>
           <tr>
             <td><b>Enter UserName : </b></td>
-            <td><input type="text" id="UserName"/></td>
+            <td><input type="text" id="UserName" /></td>
           </tr>
-          <tr><td>
-            <input type="button" value="Add" id="add">
-            <input type="button" value="Update" id="update">
-            <input type="button" value="Remove" id="remove">
-            <input type="button" value="Read" id="read">
-          </td></tr>
+          <tr>
+            <td>
+                <input type="button" value="Add" id="add" />
+                <input type="button" value="Update" id="update" />
+                <input type="button" value="Remove" id="remove" />
+                <input type="button" value="Read" id="read" />
+            </td>
+          </tr>
         </table>
       </form>
     </div>
+    <br /><br />
     <div id="myDetails">
+      <table
+        class="details"
+        style="
+          border: solid 1px black;
+          text-align: center;
+          padding: auto;
+          margin: auto;
+        "
+      >
+        <thead style="font-size: larger">
+          <tr>
+            <td>Roll NO</td>
+            <td>NAME</td>
+            <td>E-MAIL</td>
+            <td>MOBILE NO</td>
+            <td>USERNAME</td>
+          </tr>
+        </thead>
+        <tbody class="d123">
 
+        </tbody>
+      </table>
     </div>
     <script src="Scripts.js" type="module"></script>
   </body>
